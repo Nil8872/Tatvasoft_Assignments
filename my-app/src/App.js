@@ -2,14 +2,17 @@ import './App.css';
 import Counter from './component/Counter';
 import About from './pages/About';
 import Home from './pages/Home';
-import { Component, useState } from 'react';
-import Clock from './component/Clock';
-import UseEffect2 from './practice/UseEffect2';
-import RefEffect1 from './practice/refEffect1';
-import ClassUseRef from './practice/ClassUseRef';
-import ParentFocus from './practice/ParentFocus';
-import UseContext from './practice/UseContext/UseContext';
-
+import { Component } from 'react';
+import Title from './component/Title';
+import LoginForm from './component/LoginForm';
+import InputRef from './component/InputRef';
+import FocusInput from './component/FocusInput'; 
+import UserList from './component/UserList';
+import RenderPropsComponents from './component/RenderPropsComponents';
+import ComA from './component/ComA';
+import { UserNameProvider } from './component/UserNameContex';
+ 
+ 
 class App extends Component {
   constructor(props) {
     super(props);
@@ -24,7 +27,8 @@ class App extends Component {
       currentPage: page,
     });
   }
-
+  
+   
   render() {
     return (
       <div className="App">
@@ -33,12 +37,28 @@ class App extends Component {
           <button style={{ margin: '10px', padding: '10px', fontSize: '20px', borderRadius: '10px', cursor: 'pointer' }} onClick={() => this.handlePageChange("home")}>Home</button>
           <button style={{ margin: '10px', padding: '10px', fontSize: '20px', borderRadius: '10px', cursor: 'pointer' }} onClick={() => this.handlePageChange("about")}>About</button>
         </nav> */}
-        {/* <Clock/> */}
-        {/* <UseEffect2/> */}
-        {/* <RefEffect1/>  */}
-        {/* <ClassUseRef/> */}
-        {/* <ParentFocus/> */}
-        <UseContext/>
+
+        {/* Day - 6  */}
+         {/* <Title/> */}
+
+        {/* Day - 7 */}
+        {/* <LoginForm/> */}
+
+        {/* Day - 8 */}
+        {/* <FocusInput/> */}
+
+        {/* Day - 9 */}
+         {/* <Home/> */}
+         {/* <RenderPropsComponents rander={()=><h3>I am coming from render props</h3>}/> */}
+         
+        {/* Day - 10 */}
+        
+        {/* <UserNameProvider value={"Nilesh"}>
+          <ComA/>
+        </UserNameProvider> */}
+       
+
+
       </div>
     );
   }
