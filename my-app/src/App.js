@@ -11,6 +11,11 @@ import UserList from './component/UserList';
 import RenderPropsComponents from './component/RenderPropsComponents';
 import ComA from './component/ComA';
 import { UserNameProvider } from './component/UserNameContex';
+import Users from './component/Users';
+import Post from './component/Post';
+import CounterHook from './component/CounterHook';
+import LoginFormHook from './component/LoginFormHook';
+import UserDetail from './component/UserDetail';
  
  
 class App extends Component {
@@ -56,9 +61,25 @@ class App extends Component {
         {/* <UserNameProvider value={"Nilesh"}>
           <ComA/>
         </UserNameProvider> */}
+
+
+        {/* Week-3 */}
+
+        
+        {/* Day - 11 */}
+        {/* <Users/> */}
+
+        {/* Day - 12 */}
+        {/* <Post/> */}
        
+        {/* Day - 13 */}
+        {/* <CounterHook/> */}
 
+        {/* Day - 14 */}
+        {/* <LoginFormHook/> */}
 
+        {/* Day - 15 */}
+         {/* <Users/> */}
       </div>
     );
   }
