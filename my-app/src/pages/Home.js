@@ -58,7 +58,7 @@ export class Home extends Component {
          <h2>I am Home Page</h2>
          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex minus consequatur debitis, quia blanditiis non! Rerum libero dicta cumque eveniet aliquid, cupiditate voluptates?</p> */}
         
-         <this.Users/> 
+         {/* <this.Users/>  */}
       </div>
     )
   }

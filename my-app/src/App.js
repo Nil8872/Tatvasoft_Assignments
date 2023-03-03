@@ -23,14 +23,14 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      currentPage: "home",
+      currentPage: true,
     };
     this.handlePageChange = this.handlePageChange.bind(this);
   }
 
-  handlePageChange(page) {
+  handlePageChange(currentPage) {
     this.setState({
-      currentPage: page,
+      currentPage: !currentPage,
     });
   }
   
@@ -38,11 +38,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {/* {this.state.currentPage === "home" ? <Home /> : <About />}
+        {this.state.currentPage  ? <Home /> : <About />}
         <nav>
-          <button style={{ margin: '10px', padding: '10px', fontSize: '20px', borderRadius: '10px', cursor: 'pointer' }} onClick={() => this.handlePageChange("home")}>Home</button>
-          <button style={{ margin: '10px', padding: '10px', fontSize: '20px', borderRadius: '10px', cursor: 'pointer' }} onClick={() => this.handlePageChange("about")}>About</button>
-        </nav> */}
+          <button style={{ margin: '10px', padding: '10px', fontSize: '20px', borderRadius: '10px', cursor: 'pointer' }} onClick={() => this.handlePageChange(this.state.currentPage)}>Home</button>
+          {/* <button style={{ margin: '10px', padding: '10px', fontSize: '20px', borderRadius: '10px', cursor: 'pointer' }} onClick={() => this.handlePageChange("about")}>About</button> */}
+        </nav>
 
         {/* Day - 6  */}
          {/* <Title/> */}
@@ -82,9 +82,21 @@ class App extends Component {
         {/* Day - 15 */}
          {/* <Users/> */}
 
+          {/* Week-3 */}
+
          {/* Day - 17 */}
-         <PostDetail/>
-      </div>
+         {/* <PostDetail/> */}
+
+         {/* Day - 18  */}
+          {/* <UserNameProvider value={"Nilesh"}>
+            <ComA/>
+          </UserNameProvider> */}
+
+        {/* Day - 19  */}
+
+
+
+      </div>  
     );
   }
 }
