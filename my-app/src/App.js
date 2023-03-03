@@ -16,6 +16,7 @@ import Post from './component/Post';
 import CounterHook from './component/CounterHook';
 import LoginFormHook from './component/LoginFormHook';
 import UserDetail from './component/UserDetail';
+import PostDetail from './component/PostDetail';
  
  
 class App extends Component {
@@ -80,6 +81,9 @@ class App extends Component {
 
         {/* Day - 15 */}
          {/* <Users/> */}
+
+         {/* Day - 17 */}
+         <PostDetail/>
       </div>
     );
   }
