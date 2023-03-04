@@ -106,16 +106,19 @@ body{
     font-weight: 500;
 }
 .btn{
-    font-size: 50px;
-    margin-left : 20px;
+    font-size: 30px;
+    /* margin-left : 20px; */
+    margin: 20px;
     color:rgba(21, 0, 255, 0.733);
-  
+    background-color: rgba(255,255,255, 0.3);
+    
 }
 .btn:hover{
     cursor: pointer;
     transition: all 0.3s ease;
     color:rgb(2, 95, 2);
     transform: scale(0.96);
+    background-color: rgba(255,255,255, 0.5);
 }
 
 .items{
@@ -143,5 +146,38 @@ body{
  transform: scale(1.05);
   
 }
-
  
+.countValue h1{
+    font-size: 80px;
+    box-shadow: 0 0 20px rgba(45, 46, 46, 0.45);
+    border-radius: 20px 20px 0px 0px;
+    text-align: center;
+   
+    font-weight: 700s;
+    padding:10px 20px;
+    
+    letter-spacing: 2px;
+    text-shadow:  4px 4px 3px rgba(45, 46, 46, 0.45);
+    margin-top : 20px;
+    font-family: 'Noto Serif', serif;
+    background: rgba(255,255,255, 0.3);
+}
+ 
+ 
+.input{
+    
+    padding:10px;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0 5px 10px 5px rgba(0,0,0,0.1);
+    background: rgba(255,255,255, 0.1);
+    border: 2px solid rgba(0,0,0, 0.3);
+    caret-color: blue;
+    display: block;
+    margin :auto;
+    margin: 10px auto;
+    width: 100%;
+    text-align: start;
+     
+   
+}
