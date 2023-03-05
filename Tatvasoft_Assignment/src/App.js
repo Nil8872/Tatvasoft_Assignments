@@ -24,6 +24,10 @@ import RegisterUser from "./component/RegisterUser";
 import CustomHook from "./practice/CustomHook";
 import CustomHook2 from "./practice/CustomHook2";
 import RenderOne from "./component/RenderOne";
+import RenderTwo from "./Render/RenderTwo";
+import ParentCom from "./Render/ParentCom";
+import Parent23 from "./Render/Parent23";
+import Parent24 from "./Render/Parent24";
 
 
 export const GlobalCounter = React.createContext();
@@ -122,8 +126,21 @@ function App() {
         {/* <RegisterUser/> */}
 
         {/* Day - 20 */}
-        <RenderOne/>
+        {/* <RenderOne/> */}
 
+        {/* Week - 5 */}
+
+        {/* Day - 21 */}
+        {/* <RenderTwo/> */}
+
+        {/* Day - 22 */}
+        {/* <ParentCom/> */}
+
+        {/* Day - 23 */}
+        {/* <Parent23/> */}
+
+        {/* Day - 24 */}
+        <Parent24/>
      
       </div>
     );
